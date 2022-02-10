@@ -24,8 +24,8 @@
     <a href="" class="logo-web">Web<span class="logo-studio">Studio</span></a>
      <nav class="heder-nav">
       <ul class="heder-list">
-        <li class="heder-item"><a href="./index.html" class="heder-link">Студия</a></li>
-        <li class="heder-item"><a href="./portfolio.html" class="heder-link">Портфолио</a></li>
+        <li class="heder-item"><a href="./index.html" class="heder-link current">Студия</a></li>
+        <li class="heder-item"><a href="./portfolio.html" class="heder-link ">Портфолио</a></li>
         <li class="heder-item"><a href="" class="heder-link">Контакты</a></li>
       </ul>
     </nav>
@@ -57,7 +57,7 @@
   <section class="section-hero">
     <div class="container">
        <h1 class="title">Эффективные решения <br> для вашего бизнеса</h1>
-       <button type="button" class="hero-btn"> Заказать услугу</button>
+       <button type="button" class="hero-btn" data-modal-open> Заказать услугу</button>
     </div> 
   </section>
 
@@ -119,9 +119,18 @@
       <div class="container">
       <h2 class="aside-title">Чем мы занимаемся</h2>
       <ul class="aside-list">
-        <li class="aside-item"><img src="./images/img1.jpg" alt="Работа за пк и планшетом" width="370" height="294"></li>
-        <li class="aside-item"><img src="./images/img2.jpg" alt="Работа за пк и телефоном" width="370" height="294"></li>
-        <li class="aside-item"><img src="./images/img3.jpg" alt="Работа за планшетом" width="370" height="294"></li>
+        <li class="aside-item">
+          <img src="./images/img1.jpg" alt="Работа за пк и планшетом" width="370" height="294">
+        <p class="aside-post-title">Десктопные приложения</p>
+        </li>
+        <li class="aside-item">
+          <img src="./images/img2.jpg" alt="Работа за пк и телефоном" width="370" height="294">
+        <p class="aside-post-title">Мобильные приложения</p>
+        </li>
+        <li class="aside-item">
+          <img src="./images/img3.jpg" alt="Работа за планшетом" width="370" height="294">
+        <p class="aside-post-title">Дизайнерские решения</p>
+        </li>
       </ul>
   </div> 
  </section>
@@ -361,4 +370,14 @@
 </div>
 </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="icon-close-btn">
+          <use href="./images/icons.svg#icon-modal-close-btn"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
