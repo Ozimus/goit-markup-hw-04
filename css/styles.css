@@ -116,11 +116,10 @@ img {
 .heder-link:hover,
 .heder-link:focus {
   color: var(--main-color-blue-);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .heder-link {
-  transition: transform 2500ms linear;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current {
   position: relative;
@@ -156,11 +155,11 @@ img {
 .heder-link-item:focus {
   color: var(--main-color-blue-);
   fill: var(--main-color-blue-);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .heder-link-item {
   display: flex;
   align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-hero {
   background-color: #2f303a;
@@ -359,7 +358,6 @@ img {
 .team-link:focus {
   background-color: var(--main-color-blue-);
   fill: #ffffff;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-icon + .team-list-icon {
   margin-left: 10px;
@@ -372,6 +370,7 @@ img {
   width: 44px;
   height: 44px;
   fill: #afb1b8;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon {
   width: 20px;
@@ -402,7 +401,6 @@ img {
 .clients-link:focus {
   border: 1px solid var(--main-color-blue-);
   fill: var(--main-color-blue-);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link {
   border: 1px solid #afb1b8;
@@ -413,6 +411,7 @@ img {
   fill: #afb1b8;
   width: 100%;
   height: 100%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-item:not(:last-child) {
   margin-right: 30px;
@@ -457,7 +456,7 @@ img {
 .tel {
 }
 .network {
-  /* display: flex; */
+  margin-right: 93px;
 }
 .footer-title {
   color: #ffffff;
@@ -478,7 +477,6 @@ img {
 .footer-link:focus {
   background-color: var(--main-color-blue-);
   /* fill: #ffffff; */
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-icon + .footer-list-icon {
   margin-left: 10px;
@@ -492,10 +490,35 @@ img {
   justify-content: center;
   fill: #ffffff;
   background: rgba(255, 255, 255, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon {
   width: 20px;
   height: 20px;
+}
+.sub-box {
+}
+.sub-title {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.sub-btn {
+  color: #ffffff;
+  background-color: var(--main-color-blue-);
+  fill: #ffffff;
+}
+.sub-input {
+  height: 50px;
+  width: 358px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 .option-list {
   display: flex;
@@ -510,6 +533,7 @@ img {
   border-radius: 4px;
 
   color: #212121;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .option-item:not(:last-child) {
   margin-right: 8px;
@@ -517,7 +541,6 @@ img {
 .option-item:hover,
 .option-item:focus {
   color: var(--main-color-white-);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .option-btn {
   background: #f5f4fa;
@@ -528,6 +551,7 @@ img {
   cursor: pointer;
   padding: 6px 22px;
   letter-spacing: 0.03em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .option-btn:hover,
 .option-btn:focus {
@@ -537,7 +561,6 @@ img {
   border-radius: 4px;
   color: var(--main-color-white-);
   cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-gallery {
   margin-bottom: 64px;
@@ -576,22 +599,21 @@ img {
 .gallery-link {
   display: block;
   /* position: relative; */
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery-link:hover,
 .gallery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery-link:hover .gallery-pre-text,
 .gallery-link:focus .gallery-pre-text {
   transform: translateY(0%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery-pre-text {
   position: absolute;
   font-size: 18px;
-  line-height: 1, 55;
+  line-height: 156%;
   letter-spacing: 0.03em;
   font-weight: 600;
   font-weight: normal;
@@ -607,14 +629,15 @@ img {
 .gallery-pre-text {
   position: absolute;
   font-size: 18px;
-  line-height: 1, 55;
+  line-height: 156%;
   letter-spacing: 0.03em;
-
+  justify-content: center;
   color: #ffffff;
   top: 0;
   left: 0;
   background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
+  /* padding: 63px 24px; */
+
   height: 100%;
   transform: translateY(100%);
   transition: transform 250ms linear;
